@@ -22,6 +22,7 @@ services:
     environment:
       - MINIO_DISTRIBUTED_MODE_ENABLED=yes
       - MINIO_DISTRIBUTED_NODES=minio1,minio2,minio3,minio4
+      - MINIO_PROMETHEUS_AUTH_TYPE=public
     secrets:
       - secret_key
       - access_key
@@ -52,6 +53,7 @@ services:
     environment:
       - MINIO_DISTRIBUTED_MODE_ENABLED=yes
       - MINIO_DISTRIBUTED_NODES=minio1,minio2,minio3,minio4
+      - MINIO_PROMETHEUS_AUTH_TYPE=public
     secrets:
       - secret_key
       - access_key
@@ -82,6 +84,7 @@ services:
     environment:
       - MINIO_DISTRIBUTED_MODE_ENABLED=yes
       - MINIO_DISTRIBUTED_NODES=minio1,minio2,minio3,minio4
+      - MINIO_PROMETHEUS_AUTH_TYPE=public
     secrets:
       - secret_key
       - access_key
@@ -112,6 +115,7 @@ services:
     environment:
       - MINIO_DISTRIBUTED_MODE_ENABLED=yes
       - MINIO_DISTRIBUTED_NODES=minio1,minio2,minio3,minio4
+      - MINIO_PROMETHEUS_AUTH_TYPE=public
     secrets:
       - secret_key
       - access_key
